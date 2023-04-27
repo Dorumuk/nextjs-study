@@ -1,6 +1,8 @@
 import { getProduct, getProducts } from "@/service/products";
 import { notFound } from "next/navigation";
 
+export const revalidate = 3; // ISR 렌더링, 3초 간격으로 SSG를 서버 상에 다시 만들어 둘 건지 정할 수 있음.
+
 type Props = {
   params: {
     slug: string
