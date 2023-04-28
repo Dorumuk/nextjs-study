@@ -1,10 +1,7 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import os from 'os'; // 노드 APIs
 import Counter from '@/components/Counter';
-
-const inter = Inter({ subsets: ['latin'] });
 
 // app 내의 컴포넌트는 기본적으로 '서버컴포넌트' 이다.
 export default function Home() {
@@ -13,6 +10,12 @@ export default function Home() {
     <>
       <h1>Home page</h1>
       <Counter />
+      <Image 
+        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8"
+        alt="shop"
+        width={400}
+        height={400}
+      />
     </>
   )
 }
