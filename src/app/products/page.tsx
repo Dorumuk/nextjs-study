@@ -15,7 +15,9 @@ export default async function ProductsPage() {
       <Image src={clothesImage} alt="Cothes" priority />
       <ul>
         {products.map(({ id, name }, index) => (
-          <li key={index}><Link href={`/products/${id}`}>{name}</Link></li>
+          <li key={index}>
+            <Link href={`/products/${id}`}>{name}</Link>
+          </li>
         ))}
       </ul>
       <MeowArticle />
