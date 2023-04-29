@@ -2,6 +2,7 @@ import Image from 'next/image'
 import './globals.css'
 import os from 'os'; // 노드 APIs
 import Counter from '@/components/Counter';
+import { Analytics } from '@vercel/analytics/react';
 
 // app 내의 컴포넌트는 기본적으로 '서버컴포넌트' 이다.
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         width={400}
         height={400}
       />
+      <Analytics />
     </>
   )
 }
